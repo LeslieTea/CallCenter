@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150208042218) do
+ActiveRecord::Schema.define(version: 20150208055734) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -37,6 +37,15 @@ ActiveRecord::Schema.define(version: 20150208042218) do
   create_table "scripts", force: true do |t|
     t.string   "title"
     t.text     "body"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "telemarketer_actions", force: true do |t|
+    t.string   "label"
+    t.string   "designation"
+    t.text     "text_field"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
