@@ -1,3 +1,14 @@
-<h3>Welcome!</h3>
+<p class='lead'>
+  All Scripts
+  <hr/>
+</p>
 
-<p>This is the Postit template. You've access the PostsController, index action. This is the index template. Find me under app/views/posts folder.</p>
+<% @scripts.each do |script| %>
+<div class="row">
+  <div class='span8 well'>
+    <h4><%= script.title %></h4>
+    <p><%= script.body %></p>
+  </div>
+</div>
+<% end %>
+

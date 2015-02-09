@@ -2,8 +2,11 @@
   <div class="navbar-inner">
     <a class="brand" href="#">HGR</a>
     <ul class="nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Scripts</a></li>
+      <li>
+        <%= link_to "Home", root_path %>
+      <li>
+        <%= link_to "Scripts", scripts_path %>
+      </li>
       <li><a href="#">TM Actions</a></li>
       <li><a href="#">Notes</a></li>
     </ul>
