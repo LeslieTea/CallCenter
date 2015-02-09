@@ -1,0 +1,9 @@
+<% @tma.each do |telemarketer_action| %>
+<div class="row">
+  <div class='span11 well'>
+    <h4><%= telemarketer_action.label %></h4>
+    <p><%= telemarketer_action.designation %></p>
+    <p><%= telemarketer_action.text_field %></p>
+  </div>
+</div>
+<% end %>
